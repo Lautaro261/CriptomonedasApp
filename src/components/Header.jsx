@@ -18,6 +18,7 @@ const styles= StyleSheet.create({
         backgroundColor:'#5e49e2',
         paddingBottom:10,
         textAlign:'center',
+        fontFamily:'Lato-Black',
         fontSize:18,
         color:'#fff',
         marginBottom:30
