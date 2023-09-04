@@ -1,28 +1,22 @@
-import React from "react";
-import { Text, StyleSheet, Platform, View } from "react-native";
+import React from 'react';
+import {Text, StyleSheet, Platform, View} from 'react-native';
 
-const Header = ()=>{
+const Header = () => {
+  return <Text style={styles.headerText}>Criptomonedas</Text>;
+};
 
-    return(
-        <Text style={styles.headerText}>Criptomonedas</Text>
+const styles = StyleSheet.create({
+  container: {},
+  headerText: {
+    paddingTop: Platform.OS === 'ios' ? 50 : 50,
+    backgroundColor: '#5e49e2',
+    paddingBottom: 10,
+    textAlign: 'center',
+    fontFamily: 'Lato-Black',
+    fontSize: 18,
+    color: '#fff',
+    marginBottom: 30,
+  },
+});
 
-    )
-}
-
-const styles= StyleSheet.create({
-    container:{
-
-    },
-    headerText:{
-        paddingTop: Platform.OS === 'ios' ? 50 : 50,
-        backgroundColor:'#5e49e2',
-        paddingBottom:10,
-        textAlign:'center',
-        fontFamily:'Lato-Black',
-        fontSize:18,
-        color:'#fff',
-        marginBottom:30
-    }
-})
-
-export default Header
+export default Header;
